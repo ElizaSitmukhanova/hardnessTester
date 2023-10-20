@@ -1,0 +1,44 @@
+.production {
+    margin-bottom: 128px;
+    &__block {
+        margin-top: 80px;
+        display: grid;
+        grid-gap: 30px;
+        grid-template-columns: repeat(3, 418px);
+        
+    }
+    &__center{
+        display: grid;
+        grid-gap: 30px;
+        grid-template-columns: repeat(2, 194px);
+        grid-template-rows: repeat(2, 198px);
+        
+    }
+    &__img {
+        position: relative;
+        z-index: 1;
+        
+        &:hover::before{ 
+            content: ''; 
+            z-index: 2; 
+            position: absolute; 
+            background-image: url("../../icons/zoom.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            width: 48px;
+            height: 48px;
+            cursor: pointer;
+
+        }
+        img {
+            width: 100%;
+            border-radius: 28px;
+            transition: 1s;
+        }
+
+    }
+    
+}

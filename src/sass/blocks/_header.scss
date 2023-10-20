@@ -1,0 +1,117 @@
+.header {
+    margin: 24px 0;
+    &__logo{
+        position: absolute;
+        left: -163px; 
+    }
+
+    &__nav {
+        display: flex;
+        justify-content: space-between;  
+    }
+     
+    &-dropdown {
+        position: relative;
+        display: inline-block;  
+        &:hover &__content {
+           display: grid; 
+        }
+       
+        &__content {
+            position: absolute;
+            background-image: url('../../img/dropdown.png');
+            background-image: url('../img/dropdown.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            padding: 41px 0 9px 32px;
+            width: 273px;
+            height: 197px;
+            top: 50px;
+            left: -15px;
+            z-index: 2;
+            display: none;
+            align-items: start;
+
+        } 
+        &__item {
+            font-size: 16px;
+            font-weight: 400;
+            color: #FFF;
+            text-decoration: none;
+            &:hover {
+                color: $base-color;
+            }
+        }
+
+    }
+
+    &__items {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__item {
+        text-decoration: none;
+            margin-right: 70px;
+            color:  $base-color;
+            font-size: 12px;
+            font-weight: 550;
+            line-height: normal;
+            text-transform: uppercase;
+            &:hover {
+                color: #fff;
+            }
+    }    
+    &__contacts {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__phone {
+        text-decoration: none;
+        color:  $base-color;
+        font-size: 12px;
+        font-weight: 550;
+        line-height: normal;
+        text-transform: uppercase;
+    }
+    &__lang {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        text-decoration: none;
+        margin-left: 60px;
+    }
+    &__icon {
+        width: 32px;
+        margin-right: 10px;
+    }
+    &__eng {
+        text-decoration: none;
+        color:  $base-color;
+        font-size: 12px;
+        font-weight: 550;
+        line-height: normal;
+        text-transform: uppercase;
+    }
+    &__utilits {
+        position: absolute;
+        right: -280px;
+        display: flex;
+        top: -4px;
+        justify-content: space-between;
+    }
+
+    &__utilit {
+        width: 32px;
+        display: block;
+        text-decoration: none;
+        margin-right: 30px;
+        img {
+            width: 100%;
+        }
+    }
+}
+ 
+

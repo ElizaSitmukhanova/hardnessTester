@@ -1,0 +1,39 @@
+@import 'libs/bootstrap-reboot.min';
+@import 'libs/font';
+@import 'libs/slick';
+@import 'libs/animate';
+@import 'base/mixins';
+@import 'base/variables';
+@import 'base/animation';
+
+body{
+    background-color: #1B1F22;;
+}
+
+* {
+    font-family: 'HelveticaNeueCyr', sans-serif;
+}
+.container {
+    max-width: 1314px;
+    margin: 0 auto;
+    position: relative;
+}
+.wrapper {
+    background-color: $second-color;
+    border-radius: 28px;
+}
+
+
+@import 'blocks/header';
+@import 'blocks/promo';
+@import 'blocks/scales';
+@import 'blocks/sensors';
+@import 'blocks/measurement';
+@import 'blocks/advantages';
+@import 'blocks/catalog';
+@import 'blocks/arguments';
+@import 'blocks/production';
+@import 'blocks/info';
+@import 'blocks/footer';
+@import 'blocks/buttons';
+@import 'blocks/title';

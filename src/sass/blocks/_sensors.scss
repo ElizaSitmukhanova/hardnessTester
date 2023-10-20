@@ -1,0 +1,50 @@
+.sensors {
+    margin-top: 30px;
+
+    &__wrapper {
+        padding: 72px 70px 0 89px;
+        position: relative;
+        height: 782px;
+        background-image: url('../../img/sensors.png');
+        background-image: url('../img/sensors.png');
+        background-repeat: no-repeat;
+        background-position: bottom;
+
+    }
+
+    &__grid {
+        margin-top: 96px;
+        display: grid;
+        grid-template-columns: 306px auto 271px;
+    }
+
+    &__title {
+        color: #FFF;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 150%;
+    }
+
+    &__subtitles {
+        margin-top: 28px;
+        color: #CBCECF;
+        font-size: 16px;
+        font-weight: 550;
+        line-height: 180%;
+        list-style-type: none;
+        padding-left: 0;
+    }
+
+    &__more {
+        margin-top: 32px;
+        a {
+            color: #FF3E41;
+            font-size: 16px;
+            font-weight: 400;
+            &:hover {
+                color: $base-color;
+                text-decoration: none;
+            }
+        }
+    }
+}

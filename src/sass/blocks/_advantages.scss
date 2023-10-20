@@ -1,0 +1,95 @@
+.advantages {
+    margin-top: 30px;
+    min-height: 782px;
+    margin-bottom: 128px;
+
+    &__grid {
+        display: grid;
+        grid-template-columns: 530px 754px;
+        grid-gap: 30px;
+    }
+
+    &__left {
+        padding: 72px 0 0 72px;
+    }
+
+    &__list {
+        padding: 48px 0 20px;
+    }
+
+    &__item {
+        list-style-type: none;
+        line-height: 28px;
+        color: $base-color;
+        font-size: 16px;
+        font-weight: 550;
+    }
+
+    &__image {
+        margin-right: 21px;
+    }
+
+    &__right {
+        display: grid;
+        grid-template-rows: 0.5fr 0.5fr;
+        grid-gap: 30px;
+    }
+
+    &__up {
+        position: relative;
+    }
+
+    &__descr {
+        position: absolute;
+        top: 115px;
+        left: 72px;
+        color: var(--white, #FFF);
+        font-size: 20px;
+        font-weight: 550;
+        width: 364px;
+
+    }
+
+    &__images {
+        position: relative;
+    }
+
+    &__usb {
+        position: absolute;
+        top: 75px;
+        right: 2px;
+        z-index: 2;
+        border-bottom-right-radius: 28px;
+    }
+
+    &__cd {
+        position: absolute;
+        z-index: 1;
+        top: 58px;
+        right: 3px;
+        border-bottom-right-radius: 28px;
+    }
+
+    &__down {
+        position: relative;
+        padding-top: 48px;
+    }
+
+    &__title {
+        align-items: center;
+        display: grid;
+        grid-template-columns: 115px auto;
+        grid-gap: 14px;
+        color: var(--white, #FFF);
+        font-weight: 700;
+        padding-left: 207px;
+    }
+
+    &__num {
+        font-size: 200px;
+    }
+
+    &__text {
+        font-size: 42px;
+    }
+}

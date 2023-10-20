@@ -1,0 +1,72 @@
+.promo {
+    margin-top: 76px;
+
+    &__block {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__title {
+        color: $base-color;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 700;
+    }
+
+    &__icon {
+        width: 36px;
+        img {
+            width: 50px;
+            height: 50px;
+        }
+        
+    }
+    &__subtitle {
+        position: absolute;
+        top: 250px;
+        color: #fff;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 125%; 
+    }
+    &__carousel {
+        display: grid;
+        grid-template-columns: 35% 30% 35%;
+        position: relative;
+        align-items: center;
+        &-back {
+            width: 500px;
+            height: 500px;
+            position: relative;
+            img{
+                position: absolute;
+                left: -46px;
+                top: -70px;
+                width: 100%;
+                filter: blur(9.5px);
+
+            }
+        }
+        &-front {
+            width: 436px;
+            height: 685px;
+            position: relative;
+            img{
+                position: absolute;
+                width: 100%;
+                top: -44px;
+
+            }
+        }
+
+        &-subtitle {
+            color: #fff;
+            font-size: 72px;
+            font-weight: 700;
+            line-height: 125%;
+            text-align: right;
+        }
+    }
+ 
+
+}

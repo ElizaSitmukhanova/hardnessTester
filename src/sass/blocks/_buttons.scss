@@ -1,0 +1,115 @@
+.btn {
+    color: $base-color;
+    font-size: 16px;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    text-transform: uppercase;
+    outline: none; 
+    border-bottom: 2px solid $base-color;
+    padding-bottom: 10px;  
+    &:hover {
+        color: #FFF;
+        
+    }
+    &-choice {
+        width: 154px;
+    }
+    &-more {
+        width: 105px;
+        position: absolute;
+        right: 56px;
+        text-decoration: none;
+
+    }
+    &-fsz15 {
+        font-size: 15px;
+        text-transform: none;
+        width: 92px;
+    }
+    &-public {
+        color: var(--main-dark, #1B1F22);
+        letter-spacing: 0.48px;
+        padding-bottom: 7px;  
+        border-bottom: 2px solid #1B1F22;
+        &:hover {
+            color: $base-color;
+        }
+    }
+}
+.button {
+    color: #FFF;
+    font-size: 15px;
+    padding-top: 12px;
+    border: none;
+    background-color: transparent;
+    outline: none; 
+    padding-bottom: 10px;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    border-radius: 66px;
+    border: 1px solid #4E5051;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+    &:hover {
+        background-color: #4E5051;
+    }
+
+}
+
+.social {
+    border-radius: 30px;
+    border: none;
+    background-color: white;
+    outline: none; 
+    padding: 16px;  
+    width: 48px;
+    height: 48px;
+    position: relative;
+    cursor: pointer;
+    &:hover {
+        width: 50px;
+        height: 50px;
+    }
+    &_pink {
+        background-color: #FF3E41;
+        position: relative;
+      
+    }
+    &_green {
+        background-color: #25CB63;
+        position: relative;
+       
+    }
+    svg {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+}
+.dropbtn {  
+    color:#CBCECF;
+    font-size: 12px;
+    font-weight: 550;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    position: relative;
+    &:hover, &:focus{
+          color: #FFF;
+          
+          
+
+
+        }
+   
+     
+}
+
+ 

@@ -1,0 +1,23 @@
+.measurement {
+    margin-top: 30px;
+    &__wrapper {
+        display: grid;
+        grid-template-columns: 670px auto;
+        grid-gap: 71px;
+    }
+    &__text {
+        margin-top: 104px;
+        padding-right: 88px;
+    }
+    &__descr {
+        margin: 48px 0 148px;
+        color: $base-color;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 28px;
+        span {
+            color: var(--white, #FFF);
+            font-weight: 550;
+        }
+    }
+}
