@@ -1,100 +1,82 @@
 .header {
-    margin: 24px 0;
+     
+   
+    border-bottom: 1px solid #292B32;
     &__logo{
         position: absolute;
         left: -163px; 
-    }
+        transition: all 0.5s;
+        padding: 28px 0;
 
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
     &__nav {
         display: flex;
-        justify-content: space-between;  
-    }
-     
-    &-dropdown {
-        position: relative;
-        display: inline-block;  
-        &:hover &__content {
-           display: grid; 
-        }
-       
-        &__content {
-            position: absolute;
-            background-image: url('../../img/dropdown.png');
-            background-image: url('../img/dropdown.png');
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center;
-            padding: 41px 0 9px 32px;
-            width: 273px;
-            height: 197px;
-            top: 50px;
-            left: -15px;
-            z-index: 2;
-            display: none;
-            align-items: start;
-
-        } 
-        &__item {
-            font-size: 16px;
-            font-weight: 400;
-            color: #FFF;
-            text-decoration: none;
-            &:hover {
-                color: $base-color;
-            }
-        }
-
-    }
-
-    &__items {
-        display: flex;
-        align-items: center;
         justify-content: space-between;
+        nav ul{
+            
+            margin: 0;
+            padding: 0;
+        }
     }
     &__item {
-        text-decoration: none;
-            margin-right: 70px;
-            color:  $base-color;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        position: relative;
+        float: left;
+        a {
+            display: block;
+            text-decoration: none;
+            color: #CBCECF;
             font-size: 12px;
             font-weight: 550;
-            line-height: normal;
+            letter-spacing: 0.6px;
             text-transform: uppercase;
+            padding: 28px 68px 28px 0;
+            position: relative;
             &:hover {
-                color: #fff;
+                color: #FFF;
+                 
+                &::after {
+                    content: '';
+                    position: absolute;
+                    width: 82px;
+                    height: 1px;
+                    background-color: red;
+                    top: 75px;
+                    left: 1px;
+                } 
             }
-    }    
-    &__contacts {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+            
+        }
     }
-    &__phone {
-        text-decoration: none;
-        color:  $base-color;
-        font-size: 12px;
-        font-weight: 550;
-        line-height: normal;
-        text-transform: uppercase;
+    &__long {
+        position: relative;
+        &:hover {
+           &::after {
+                content: '';
+                position: absolute;
+                width: 160px;
+                height: 1px;
+                background-color: red;
+                top: 75px;
+                left: 1px;
+            }   
+        }
+           
     }
+    
+    
     &__lang {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        text-decoration: none;
-        margin-left: 60px;
-    }
-    &__icon {
-        width: 32px;
-        margin-right: 10px;
-    }
-    &__eng {
-        text-decoration: none;
-        color:  $base-color;
-        font-size: 12px;
-        font-weight: 550;
-        line-height: normal;
-        text-transform: uppercase;
-    }
+         display: flex;
+         
+    }     
+
+
+  
     &__utilits {
         position: absolute;
         right: -280px;
